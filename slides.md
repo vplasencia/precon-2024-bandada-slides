@@ -172,15 +172,15 @@ transition: slide-up
 
 <br>
 
-| Functionalities             | Off-chain | On-chain |
-| --------------------------- | --------- | -------- |
-| Create group(s)             | ✅        | ✅       |
-| Update group(s)             | ✅        | N/A      |
-| Remove group(s)             | ✅        | N/A      |
-| Invite code to join a group | ✅        | Testing  |
-| Credentials to join a group | ✅        | ❌       |
-| Add member(s)               | ✅        | ✅       |
-| Remove member(s)            | ✅        | ✅       |
+| Functionalities             | Off-chain | On-chain    |
+| --------------------------- | --------- | ----------- |
+| Create group(s)             | ✅        | ✅          |
+| Update group(s)             | ✅        | N/A         |
+| Remove group(s)             | ✅        | N/A         |
+| Invite code to join a group | ✅        | In Progress |
+| Credentials to join a group | ✅        | ❌          |
+| Add member(s)               | ✅        | ✅          |
+| Remove member(s)            | ✅        | ✅          |
 
 ---
 transition: slide-up
