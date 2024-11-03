@@ -32,7 +32,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build --base /ethrome-2024-bandada-slides/
+        run: yarn build --base /precon-2024-bandada-slides/
 
       - uses: actions/configure-pages@v4
 
