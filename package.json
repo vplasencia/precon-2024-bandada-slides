@@ -1,0 +1,24 @@
+{
+  "name": "bandada-ethdam-2024",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export",
+    "prettier": "prettier -c .",
+    "prettier:write": "prettier -w ."
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.8",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.4.21"
+  },
+  "packageManager": "yarn@4.1.1",
+  "devDependencies": {
+    "playwright-chromium": "^1.43.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-slidev": "^1.0.5"
+  }
+}
