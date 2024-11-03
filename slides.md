@@ -3,7 +3,7 @@
 theme: default
 # background: "black"
 # some information about your slides, markdown enabled
-exportFilename: bandada-ethrome-2024
+exportFilename: bandada-precon-2024
 fonts:
   # basically the text
   sans: Poppins
@@ -11,10 +11,10 @@ fonts:
   serif: Poppins
   # for code blocks, inline code, etc.
   mono: Fira Code
-title: Building with Bandada
+title: Bandada
 info: |
-  ## Bandada ETHRome 2024
-  Presentation slides for ETHRome 2024.
+  ## Bandada Precon 2024
+  Presentation slides for Precon 2024.
 
   Learn more at [Bandada](https://bandada.pse.dev)
 # apply any unocss classes to the current slide
@@ -32,7 +32,7 @@ hideInToc: true
 favicon: "./favicon.svg"
 ---
 
-# Building with Bandada
+# Bandada
 
 <div class="text-25px opacity-85">
 Vivian Plasencia
@@ -45,7 +45,7 @@ Vivian Plasencia
 />
 
 <div class="abs-b mb-12 ml-6 flex text-12px opacity-70">
-  <p>ETHRome 2024</p>
+  <p>Precon 2024</p>
 </div>
 
 <div class="abs-b m-6 flex text-12px opacity-70">
@@ -53,7 +53,7 @@ Vivian Plasencia
 </div>
 
 <div class="abs-br m-6">
-  <a href="https://github.com/vplasencia/ethrome-2024-bandada-slides" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/vplasencia/precon-2024-bandada-slides" target="_blank" alt="GitHub" title="Open in GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-[eb179b]">
     <carbon-logo-github />
   </a>
@@ -175,9 +175,9 @@ transition: slide-up
 | Functionalities             | Off-chain | On-chain |
 | --------------------------- | --------- | -------- |
 | Create group(s)             | ✅        | ✅       |
-| Update group(s)             | ✅        | ❌       |
+| Update group(s)             | ✅        | N/A      |
 | Remove group(s)             | ✅        | N/A      |
-| Invite code to join a group | ✅        | ❌       |
+| Invite code to join a group | ✅        | Testing  |
 | Credentials to join a group | ✅        | ❌       |
 | Add member(s)               | ✅        | ✅       |
 | Remove member(s)            | ✅        | ✅       |
@@ -334,36 +334,6 @@ transition: slide-up
 hideInToc: true
 ---
 
-# API SDK Example
-
-```ts {all|1-3|5-14|16-18|20|all}
-import { ApiSdk, GroupCreationDetails } from "@bandada/api-sdk"
-
-const apiSdk = new ApiSdk()
-
-const apiKey = "70f07d0d-6aa2-4fe1-b4b9-06c271a641dc"
-
-const groupCreationDetails: GroupCreationDetails = {
-  name: "Group 1",
-  description: "This is Group 1",
-  treeDepth: 16,
-  fingerprintDuration: 3600
-}
-
-const group = await apiSdk.createGroup(groupCreationDetails, apiKey)
-
-const members = ["1", "2", "3"]
-
-await apiSdk.addMembersByApiKey(group.id, members, apiKey)
-
-await apiSdk.removeMemberByApiKey(group.id, "1", apiKey)
-```
-
----
-transition: slide-up
-hideInToc: true
----
-
 # Installing packages manually
 
 <br>
@@ -421,17 +391,6 @@ You can fork it, clone it or use it as a template:
 
 ---
 transition: slide-left
-layout: center
----
-
-<img
-  class="center w-[38rem]"
-  src="/bandada-semaphore-off-chain-app-architecture.svg"
-  alt="Bandada Semaphore off-chain app architecture"
-/>
-
----
-transition: slide-left
 ---
 
 # Roadmap
@@ -449,33 +408,6 @@ transition: slide-left
 - Build a modular architecture that supports several data structures and different types of groups.
 
 [github.com/orgs/bandada-infra/discussions/350](https://github.com/orgs/bandada-infra/discussions/350)
-
----
-transition: slide-up
-layout: two-cols
-layoutClass: gap-16
----
-
-# Hacker Guide
-
-<br>
-
-Document with the main Bandada information and links for hackers.
-
-<img
-  class="w-[12rem] rounded-md"
-  src="/bandada-hackathon-guide-qrcode.png"
-  alt="Bandada hackathon guide qrcode"
-/>
-
-[bandada.pse.dev/hackathon-guide](https://bandada.pse.dev/hackathon-guide)
-
-::right::
-
-<img
-  src="/bandada-birds.svg"
-  alt="Bandada birds"
-/>
 
 ---
 transition: slide-left
@@ -496,7 +428,7 @@ This presentation is open source, you can check the slides and code.
   alt="Presentation qrcode"
 />
 
-[vplasencia.github.io/ethrome-2024-bandada-slides](https://vplasencia.github.io/ethrome-2024-bandada-slides)
+[vplasencia.github.io/precon-2024-bandada-slides](https://vplasencia.github.io/precon-2024-bandada-slides)
 
 ::right::
 

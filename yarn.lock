@@ -2229,9 +2229,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bandada-ethdam-2024@workspace:.":
+"bandada-precon-2024@workspace:.":
   version: 0.0.0-use.local
-  resolution: "bandada-ethdam-2024@workspace:."
+  resolution: "bandada-precon-2024@workspace:."
   dependencies:
     "@slidev/cli": "npm:^0.48.8"
     "@slidev/theme-default": "npm:latest"
