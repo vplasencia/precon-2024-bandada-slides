@@ -178,7 +178,7 @@ transition: slide-up
 | Update group(s)             | ✅        | N/A         |
 | Remove group(s)             | ✅        | N/A         |
 | Invite code to join a group | ✅        | In Progress |
-| Credentials to join a group | ✅        | ❌          |
+| Credentials to join a group | ✅        | Excubiae    |
 | Add member(s)               | ✅        | ✅          |
 | Remove member(s)            | ✅        | ✅          |
 
